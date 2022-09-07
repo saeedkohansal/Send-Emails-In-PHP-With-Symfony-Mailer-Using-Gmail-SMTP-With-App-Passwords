@@ -18,11 +18,11 @@ $mailer = new Mailer($transport);
 $email = (new Email());
 
 // Set the "From address"
-$email->from('skohansal.ir.dev@gmail.com');
+$email->from('email@gmail.com');
 
 // Set the "To address"
 $email->to(
-    'kohansalism@gmail.com'
+    'email1@gmail.com'
     # 'email2@gmail.com',
     # 'email3@gmail.com'
 );
