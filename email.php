@@ -1,13 +1,15 @@
 <?php
+// Load Composer's autoloader
 require_once './vendor/autoload.php';
 
+// Import Classess
 use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 use Symfony\Component\Mailer\Transport;
 use Symfony\Component\Mailer\Mailer;
 use Symfony\Component\Mime\Email;
 
 // Create a Transport object
-$transport = Transport::fromDsn('smtp://skohansal.ir.dev@gmail.com:pnzkjsvqoaggvexy@smtp.gmail.com:587');
+$transport = Transport::fromDsn('smtp://USERNAME:PASSWORD@SERVER:PORT');
 
 // Create a Mailer object
 $mailer = new Mailer($transport);
